@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+
+body {
+    font-family: 'Emilys Candy', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+#subscribe {
+    border: 2px solid #000000;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+#btn-sub {
+    padding: 2px;
+    width: 30%;
+    background-color: #ff0000;
+    border: 2px solid #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content:space-between;
+    margin: 20px;
+}
+
+.highlight {
+    color: #d87093
+}
+
+.h-blue {
+    color: #0000ff;
+}
+
+#start ul, #socials ul {
+    display: flex;
+    justify-content:space-evenly;
+    list-style: none;
+}
+
+#start ul li, #socials ul li {
+    margin-right: 20px;
+}
+
+#socials ul li:last-child {
+    margin-right: 0;
+}
+
+
