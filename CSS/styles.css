@@ -58,4 +58,30 @@ nav {
     max-height: 80vh;     
 }
 
+.carousel-caption{
+    transform: translateY(-150%);
+    bottom: initial;
+}
+
+#maua {
+    background-color: #bc8f8f;
+}
+
+#tots {
+    background-color: #708090;
+}
+
+.btn-display {
+    border: 2px dashed #ffffff;
+    border-radius: 25px;
+    padding: 5px;
+    width: 30%;
+    background-color: #000000;
+    color: #ff0000;
+    
+
+
+}
+
+
 
