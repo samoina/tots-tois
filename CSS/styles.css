@@ -52,4 +52,10 @@ nav {
     margin-right: 0;
 }
 
+.img-fluid {
+    object-fit: cover;
+    background-position: center;
+    max-height: 80vh;     
+}
+
 
