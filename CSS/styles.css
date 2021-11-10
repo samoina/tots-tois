@@ -78,10 +78,36 @@ nav {
     width: 30%;
     background-color: #000000;
     color: #ff0000;
-    
-
-
 }
+
+#collection {
+    padding: 50px;
+}
+
+#shop {
+    border: 2px dashed #ffffff;
+    text-align: center;
+}
+
+#shop:hover {
+    background-color: #ff0000;
+    border: 2px solid #ffffff;
+}
+
+#shop a:hover {
+    color: #000000;
+}
+
+.col-md-3 {
+    box-shadow: 0 10px 15px rgba(0,0,255,0.3);
+}
+
+ /* {
+    transform: scale(1.1); /*to allow the image to scale 1.1 when hovered*/
+} */
+
+
+
 
 
 
