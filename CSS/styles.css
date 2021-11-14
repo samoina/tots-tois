@@ -102,9 +102,30 @@ nav {
     box-shadow: 0 10px 15px rgba(0,0,255,0.3);
 }
 
- /* {
-    transform: scale(1.1); /*to allow the image to scale 1.1 when hovered*/
+.centered-text { /*used this to overlay the text on the image*/
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+.relative {
+    border: 3px solid red;
+    height: 200px;
+
+}
+
+.absolute {
+    position: absolute;
+    border: 2px solid green;
+    right: 0;
+   height: 80px;
+}
+
+#Instagram-feed {
+    margin: 10px;
+}
+  
 
 
 
