@@ -52,6 +52,7 @@ nav {
     margin-right: 0;
 }
 
+/*to ensure that images fit in the carousel, make sure they are fluid (thus responsive), set to pcover and position center then set maximum height*/
 .img-fluid {
     object-fit: cover;
     background-position: center;
@@ -98,7 +99,7 @@ nav {
     color: #000000;
 }
 
-.col-md-3 {
+.toto-collection {
     box-shadow: 0 10px 15px rgba(0,0,255,0.3);
 }
 
@@ -124,6 +125,13 @@ nav {
 
 #Instagram-feed {
     margin: 10px;
+}
+
+#details {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #00008b;
+    padding: 20px;   
 }
   
 
