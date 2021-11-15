@@ -53,7 +53,7 @@ nav {
 }
 
 /*to ensure that images fit in the carousel, make sure they are fluid (thus responsive), set to pcover and position center then set maximum height*/
-.img-fluid {
+.display-img {
     object-fit: cover;
     background-position: center;
     max-height: 80vh;     
@@ -134,18 +134,41 @@ nav {
     padding: 20px;   
 }
 
+/*CSS for the products/about us page*/
+
+#founder {
+    display: flex;    
+}
+
+#founder-bio {
+    text-align: center;
+    height: 100%;
+    padding: 50px;
+}
+
+
+
+
+
 /*Add media queries*/
 @media (max-width:768px) {
 
     .social {
         padding-bottom: 20px;
     }
+
    #details {
        display: flex;
        flex-direction: column;
        text-align: center;
        padding: 10px;
    }
+
+   #founder {
+       display: flex;
+       flex-wrap: wrap;
+   }
+
 }
   
 
