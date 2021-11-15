@@ -133,6 +133,20 @@ nav {
     border-top: 2px solid #00008b;
     padding: 20px;   
 }
+
+/*Add media queries*/
+@media (max-width:768px) {
+
+    .social {
+        padding-bottom: 20px;
+    }
+   #details {
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+       padding: 10px;
+   }
+}
   
 
 
