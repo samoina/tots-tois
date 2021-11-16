@@ -146,6 +146,26 @@ nav {
     padding: 50px;
 }
 
+/*CSS for the products page*/
+#product-filter {
+    display: flex;
+}
+
+/*I used flex-grow because it allows a child under the parent whose display is set to flex to expand the flex container to max width AND expand itself to fill the remaining space. This allos the dropdowns to align to the right*/
+
+#product-filter h3 {
+    flex-grow: 1;  
+} 
+
+.collection-sort {
+    display: flex;
+}
+
+
+
+
+
+
 
 
 
