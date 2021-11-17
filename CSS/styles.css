@@ -151,7 +151,8 @@ nav {
     display: flex;
 }
 
-/*I used flex-grow because it allows a child under the parent whose display is set to flex to expand the flex container to max width AND expand itself to fill the remaining space. This allos the dropdowns to align to the right*/
+/*I used flex-grow because it allows a child under the parent whose display is set to flex to expand the flex container to max width AND expand itself to fill the remaining space. This allows the dropdowns to align to the right*/
+/*Flex-grow expands elements to fit their available space relative to its sibling flex elements*/
 
 #product-filter h3 {
     flex-grow: 1;  
@@ -159,6 +160,33 @@ nav {
 
 .collection-sort {
     display: flex;
+}
+
+/*For the cloth section, I used[flex to display and wrap so that they'd come around but the width is all messed up*/
+#baby-clothes {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/*Add img-fluid to the images on the HTML code. In order to manage the width,use display:flex, then arrange the flex children using flex-grow so that they occupy equal space in the row. For our design, we want 5 items per row and to wrap the rest to new rows as needed. To get five per row, they’ll need to have a width of 20% (5 * 20 = 100). Settings flex-basis: 20% would do the trick, but when we factor in padding, it exceeds 100% and we’ll only get 4 per row. With 2% padding on either side and 16% flex-basis, it’ll be just right. but in my case this led to 6 in 1 row and 4 the next. 17% gets 5 on each but smaller. i added flex-direction column so that the caption comes to the bottom*/
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 2%;
+    flex-basis: 17%;    
+    border: 2px solid #e0ffff;
+}
+
+.product-img img {
+    max-width: 100%;
+}
+
+/*add margin-top auto so that the captions are at the same level*/
+
+.product-info {
+    margin-top: auto;
 }
 
 
@@ -189,7 +217,36 @@ nav {
        flex-wrap: wrap;
    }
 
+    /*make the products section responsive, but leaving it at 1 and 21% leaves two large items at the bottom*/
+
+  .product-card {
+      flex-grow: 1;
+      flex-basis: 21%;
+      background-color: #d3d3d3;
+  }
+
+  /*select the first two children and change their size instead*/
+  #baby-clothes .product-card:first-child,
+  #baby-clothes .product-card:nth-child(2) {
+    flex-grow: 2;
+    flex-basis: 46%
+  }
+   
+
 }
+
+/*For smaller screens to display the product well*/
+@media (max-width: 600px) {
+    #baby-clothes .product-card {
+      flex: 1;
+      flex-basis: 46%;
+    }
+
+    #product-filter {
+        flex-direction: column;
+        text-align: center;
+    }
+  }
   
 
 
