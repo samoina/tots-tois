@@ -42,53 +42,91 @@
         </nav>
     </header>
 
-        <div class="container">
-            <h2 class="text-center">ABOUT US</h2>
-            <div id="founder">
-                <div id="founder-pic">
-                    <img class="img-fluid" src="/images/gathoni.jpg" alt="">
-                </div>
-                <div id="founder-bio">
-                    <h3>Meet Gathoni</h3>
-                    <p>Gathoni lives in Kitisuru with her husband Ivan, their son Alvin and their two fish, Doha and
-                        Nemo.
-                        Professionally, she is a lawyer practising at Caplann and Sandton.<br><br>In 2021, she started
-                        Tots &
-                        Tois following the birth of her son. What started as a side hustle has since grown to be a key
-                        supplier
-                        for baby clothes, accessories and maternity wear. Some of Gathoni's hobbies including making cinnamon rolls, travelling with her family and decorating spaces.</p>
-                </div>
+    <div class="container">
+        <h2 class="text-center">ABOUT US</h2>
+        <div id="founder">
+            <div id="founder-pic">
+                <img class="img-fluid" src="/images/gathoni.jpg" alt="">
             </div>
-            <h2 class="text-center">MEET THE TEAM</h2>
-            <div class="card-deck">
-                <div class="card">
-                  <img class="card-img-top" src="images/team-one.jpg" alt="Card image cap">
-                  <div class="card-body">
+            <div id="founder-bio">
+                <h3>Meet Gathoni</h3>
+                <p>Gathoni lives in Kitisuru with her husband Ivan, their son Alvin and their two fish, Doha and
+                    Nemo.
+                    Professionally, she is a lawyer practising at Caplann and Sandton.<br><br>In 2021, she started
+                    Tots &
+                    Tois following the birth of her son. What started as a side hustle has since grown to be a key
+                    supplier
+                    for baby clothes, accessories and maternity wear. Some of Gathoni's hobbies including making
+                    cinnamon rolls, travelling with her family and decorating spaces.</p>
+            </div>
+        </div>
+        <h2 class="text-center">MEET THE TEAM</h2>
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="images/team-one.jpg" alt="Card image cap">
+                <div class="card-body">
                     <h5 class="card-title">Sue Bianca</h5>
                     <p class="card-text">Head of Operations</p>
-                  </div>
                 </div>
-                <div class="card">
-                  <img class="card-img-top" src="images/team-two.jpg" alt="Card image cap">
-                  <div class="card-body">
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="images/team-two.jpg" alt="Card image cap">
+                <div class="card-body">
                     <h5 class="card-title">Meredith Awuor</h5>
                     <p class="card-text">Social Media Management</p>
-                  </div>
                 </div>
-                <div class="card">
-                  <img class="card-img-top" src="images/team-three.jpg" alt="Card image cap">
-                  <div class="card-body">
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="images/team-three.jpg" alt="Card image cap">
+                <div class="card-body">
                     <h5 class="card-title">Ike Kafwere</h5>
                     <p class="card-text">Finance Officer</p>
-                  </div>
                 </div>
-              </div>
-
-
-
-
+            </div>
         </div>
-   
+    </div>
+
+    <div class="container mt-5 hola">
+        <h3 class="text-center p-2">We want to hear from you :)</h3>
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="email">Email</label>
+            <input type="text" id="name" placeholder="johndoe@gmail.com">
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+
+            <button id="btn-submit" type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+  <!--Insert Google Map using API, the map needs an element to hold it.-->
+    <!-- <div id="map">
+
+    </div> -->
+
+    <div id="googleMap" class="mt-5" style="width:100%;height:400px;"></div>
+
+    <section id="footer">
+        <!--This is the muted text in the bottom part of the footer-->
+        <div id="details">
+          <div id="pay">
+            <i class="fab fa-cc-visa mr-2"></i>
+            <i class="fab fa-cc-mastercard mr-2"></i>
+            <i class="fab fa-cc-paypal mr-2"></i>
+            <i class="fas fa-wallet"></i>
+          </div>
+          <div id="site">
+            <p>www.<span class="highlight">Tots</span> & <span class="h-blue">Tois </span>.com</p>
+          </div>
+          <div id="rights">
+            <p>Copyright &copy; 2021. <strong>Tots & Tois</strong>. All Rights Reserved</p>
+          </div>
+        </div>
+      </section>
+
 
 
 
@@ -106,7 +144,34 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
+
+    <!-- <script src="scripts.js">
+        function initMap() {
+           var location ={lat: -1.287750, lnt:36.785130}; /*For latitude & longitude use latlong.net */
+            var map = new google.maps.Map(document.getElementById("map"),
+            {zoom:4,
+            center: location});
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNA6SBlEf8m2Q6KqFWd9SDipZu59ujBtw&callback=initMap"></script> -->
+
+
+    <!-- Create a function to set the properties of the map. 
+        *myMap is a variable that defines the properties of the map.
+        *center is a property that specifies where to center pit using lat. and long.  
+        *var map=new line with getElementById creates a new map using parameters passed (mapProp)  
+    -->
+    <script>
+        function myMap() {
+        var mapProp= {
+          center:new google.maps.LatLng(-1.287750,36.785130),
+          zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        </script>
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNA6SBlEf8m2Q6KqFWd9SDipZu59ujBtw&callback=myMap"></script>
 </body>
 
 </html>
