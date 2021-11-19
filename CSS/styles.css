@@ -162,7 +162,7 @@ nav {
     display: flex;
 }
 
-/*For the cloth section, I used[flex to display and wrap so that they'd come around but the width is all messed up*/
+/*For the cloth section, I used flex to display and wrap so that they'd come around but the width is all messed up*/
 #baby-clothes {
     display:flex;
     flex-wrap: wrap;
@@ -220,7 +220,7 @@ input[type=text], textarea {
 }
 
 /*Style the map which I added using Google API*/
-#map {
+#googleMap {
     height: 500px;
     width: 100%;
 }
